@@ -1,7 +1,13 @@
-﻿<!DOCTYPE html>
-<html lang="zh" class="no-js demo-1">
-	<head>
-		<meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="en"><!--语言为英语-->
+<head>
+		 <meta charset="UTF-8" />
+		 <title>gentryhuang|坦克大战</title>
+         <link href="images/favicon.ico" rel="shortcut icon">
+         <link href="css/head.css" type="text/css" rel="stylesheet">
+         <link href="css/default.css" type="text/css" rel="stylesheet">
+         <link href="css/foot.css" type="text/css" rel="stylesheet">
+         <link href="css/font-awesome.min.css" rel="stylesheet">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<script src="js/jquery.min.js"></script>
@@ -19,16 +25,43 @@
 		<script src="js/Collision.js"></script>
 		<script src="js/stage.js"></script>
 		<script src="js/main.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
+	
 		<style type="text/css">
 			#canvasDiv canvas{
 				position:absolute;
 			}
+
+		*{
+			margin:0px;
+			padding:0px;
+		 }
+		body{
+			overflow:hidden;
+		}
+	
 		</style>
 	</head>
 	<body>
-		<div class="container">
-			<head><h3>操作说明：玩家1：wasd上左下右，space射击；玩家2：方向键，enter射击。n下一关，p上一关。</h3></head>
+	     <!--页头-->
+    <div class="head">
+        <i class="fa fa-space-shuttle" aria-hidden="true"></i> battle| 坦克大战
+    </div>
+     <div id='mybox'>
+	    <div class="banner">
+            <a href="https://github.com/gentryhuang/Battle_City" target="view_window" class="myButton"><i class="fa fa-github"></i>-Fork on Github-</a>
+      </div>
+        <div class="info">
+            <h1>坦克大战说明</h1>
+            <ul>
+                <li>玩家1:wasd上左下右，space射击</li>
+                <li>玩家2:方向键上下左右，enter射击</li>
+                <li>n 下一关，p 上一关</li>
+                <li> 不支持手机操作  </li>
+            </ul>
+        </div>
+	 </div>
+
+		<div class="container" style="position:absolute;top:180px;left:400px;">
 			<div class="main clearfix">
 				<div id="canvasDiv" >
 					<canvas id="wallCanvas" ></canvas> 
@@ -38,11 +71,16 @@
 					<canvas id="stageCanvas" ></canvas>
 				</div>
 			</div>
-			
-		</div><!-- /container -->
-		<div style="text-align:center;">
-<p>来源:<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
-</div>
+	   </div>
+	  
+    <!--页脚-->
+    <div class="foot">
+        <a href="http://gentryhuang.site" target="view_window"><i class="fa fa-home"></i>主页</a> -
+        <a href="https://github.com/gentryhuang" target="view_window"><i class="fa fa-github"></i>Github</a> -
+        <a href="http://weibo.com/###" target="view_window"><i class="fa fa-weibo"></i>微博</a> -
+        <a href="http://ogudt6aal.bkt.clouddn.com/image/###" target="view_window"><i class="fa fa-weixin"></i>微信</a> -
+        <a href="mailto:gentryhuang.xw@gmail.com"><i class="fa fa-envelope"></i>邮箱</a>
+    </div>
+</body>
 
-	</body>
 </html>
